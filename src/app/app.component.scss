@@ -1,0 +1,146 @@
+$title-color: rgb(80, 80, 80);
+
+:host {
+    position: absolute;
+    left: 0rem;
+    right: 0rem;
+    top: 0rem;
+    bottom: 0rem;
+    background-color: lightgray;
+
+    .title-frame {
+        position: absolute;
+        left: 1rem;
+        right: 1rem;
+        top: 0rem;
+        height: 3.25rem;
+
+        .title {
+            font-size: 2rem;
+            color: $title-color;
+        }
+
+        .mm-logo {
+            cursor: pointer;
+            position: absolute;
+            top: 8px;
+            right: 0rem;
+            height: 3.25rem;
+        }
+
+        .metamask-title {
+            cursor: pointer;
+            position: absolute;
+            top: 0rem;
+            right: 3rem;
+            height: 3rem;
+            line-height: 3rem;
+            font-size: 1rem;
+            color: $title-color;
+            text-decoration: none;
+        }
+
+        .title-bar {
+            background-color: $title-color;
+            position: relative;
+            height: 0.25rem;
+        }
+    }
+
+    .current-data-frame {
+        position: absolute;
+        left: 1rem;
+        width: 40rem;
+        top: 4rem;
+        height: 22rem;
+
+        #temperature-circle {
+            position: absolute;
+            left: 0rem;
+            width: 20rem;
+            top: 0rem;
+            height: 20rem;
+        }
+
+        #humidity-circle {
+            position: absolute;
+            right: 0rem;
+            width: 20rem;
+            top: 0rem;
+            height: 20rem;
+        }
+
+        #timestamp {
+            position: absolute;
+            left: 0rem;
+            right: 0rem;
+            bottom: 0rem;
+            height: 2rem;
+            text-align: center;
+            line-height: 2rem;
+            color: $title-color;
+        }
+        
+    }
+
+    .history-data-list {
+        position: absolute;
+        right: 1rem;
+        width: 40rem;
+        top: 4rem;
+        height: 22rem;
+
+        .history-title {
+            color: $title-color;
+        }
+
+        .history-bar {
+            background-color: $title-color;
+            position: relative;
+            height: 2px;
+        }
+
+        .history-table {
+            position: absolute;
+            left: 0rem;
+            right: 0rem;
+            bottom: 0rem;
+            top: 2rem;
+            overflow-x: hidden;
+            overflow-y: auto;
+
+            .history-item {
+                display: block;
+                border-bottom: 1px solid $title-color;
+                height: 2rem;
+
+                .history-time {
+                    padding-left: 1rem;
+                }
+
+                .history-celsius {
+                    float: right;
+                    padding-right: 2rem;
+                }
+
+                .history-humidity {
+                    float: right;
+                    padding-right: 0.5rem;
+                }
+            }
+
+            .history-item:nth-child(even) {
+                background-color: #B0BEC5;
+            }
+        }
+    }
+
+    .history-data-frame {
+        position: absolute;
+        left: 1rem;
+        right: 1rem;
+        top: 28rem;
+        bottom: 2rem;
+    }
+
+}
